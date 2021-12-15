@@ -7,7 +7,7 @@ import TimeRanges from '../components/TimeRanges'
 import Error from '../components/Error'
 import '../styles/ConfigPage.css'
 
-function ConfigPage (): JSX.Element {
+function ConfigPage(): JSX.Element {
   const [initialTime, setInitialTime] = useState<Date | null>(new Date())
   const [endingTime, setEndingTime] = useState<Date | null>(new Date())
   const [error, setError] = useState<null | string>(null)
@@ -31,24 +31,24 @@ function ConfigPage (): JSX.Element {
   }
 
   return (
-    <div className='config-page-container'>
-      <div className='config-page-picker'>
-        <div>
+    <div className="config-page-container">
+      <div className="config-page-picker">
+        <div id="init-timer">
           <Picker
-            label='Initial Time'
+            label="Initial Time"
             timeToCheck={initialTime}
             setTimeToCheck={setInitialTime}
           />
         </div>
-        <div>
+        <div id="end-timer">
           <Picker
-            label='Ending Time'
+            label="Ending Time"
             timeToCheck={endingTime}
             setTimeToCheck={setEndingTime}
           />
         </div>
         <div>
-          <Button variant='contained' onClick={addTime}>
+          <Button variant="contained" onClick={addTime}>
             +
           </Button>
         </div>
@@ -56,7 +56,7 @@ function ConfigPage (): JSX.Element {
           <Error error={error} />
         </div>
       </div>
-      <div className='config-page-time-ranges'>
+      <div className="config-page-time-ranges">
         <TimeRanges timeRanges={timeRanges} removableButton />
       </div>
     </div>
