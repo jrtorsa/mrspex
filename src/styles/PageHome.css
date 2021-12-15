@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&display=swap');
+
+.page-home-container{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.page-home-picker{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.page-home-picker > div:nth-child(3){
+  width: 30%;
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+}
+
+.page-home-picker > div:nth-child(3) > div > div{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+.page-home-time-range{
+  width: 50%;
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 2;
+}
+
+@media (max-width: 640px){
+  .page-home-time-range{
+    display: none;
+  }
+}
