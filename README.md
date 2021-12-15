@@ -65,6 +65,11 @@ jr.torsa@gmail.com
    ```
 4. open your browser
    http://localhost:3000
+   
+5. Run the cypress tests
+   ```sh
+    npm run cypress:open
+   ```
 
 <!-- LICENSE -->
 
