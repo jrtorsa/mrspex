@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&display=swap');
+
+.config-page-container{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.config-page-picker{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.config-page-time-ranges {
+  width: 50%;
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 2;
+}
